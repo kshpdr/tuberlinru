@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>ТУ Берлин</title>
+    </head>
+    <body>
+        This is just a prototype.
+    </body>
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js";
+      
+        const firebaseConfig = {
+          apiKey: "AIzaSyCaWsZllx6AMMXzcBJXDlb1BN8kqI65Gbk",
+          authDomain: "tuberlinru.firebaseapp.com",
+          projectId: "tuberlinru",
+          storageBucket: "tuberlinru.appspot.com",
+          messagingSenderId: "197826823858",
+          appId: "1:197826823858:web:cc43f832468cc0e4f56bab"
+        };
+      
+        const app = initializeApp(firebaseConfig);
+    </script>
+
+    <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-login="tuberlinrubot" data-size="large" data-onauth="onTelegramAuth(user)" data-request-access="write"></script>
+    <script type="text/javascript">
+      function onTelegramAuth(user) {
+        alert('Logged in as ' + user.first_name + ' ' + user.last_name + ' (' + user.id + (user.username ? ', @' + user.username : '') + ')');
+      }
+    </script>
+</html>
