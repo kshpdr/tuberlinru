@@ -12,7 +12,7 @@ title = "туберлин.ру"
   # mainSections = ["section1", "section2"]
   # description = "My awesome website"
 
-[params.author]
+[author]
   name = "Денис Кошелев"
   # image = "img/author.jpg"
   # headline = "I'm only human"
