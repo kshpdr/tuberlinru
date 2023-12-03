@@ -9,7 +9,7 @@ colorScheme = "cherry"
 defaultAppearance = "light" # valid options: light or dark
 autoSwitchAppearance = false
 
-enableSearch = false
+enableSearch = true
 enableCodeCopy = false
 enableImageLazyLoading = true
 
@@ -25,12 +25,12 @@ fingerprintAlgorithm = "sha256"
 [footer]
   showCopyright = true
   showThemeAttribution = true
-  showAppearanceSwitcher = false
+  showAppearanceSwitcher = true
   showScrollToTop = true
 
 [homepage]
   layout = "page" # valid options: page, profile, custom
-  showRecent = false
+  showRecent = true
   recentLimit = 5
 
 [article]
@@ -68,10 +68,10 @@ fingerprintAlgorithm = "sha256"
 
 [fathomAnalytics]
   # site = "ABC12345"
-  # domain = "llama.yoursite.com"
+  domain = "tuberlin.ru"
 
 [plausibleAnalytics]
-  # domain = "blog.yoursite.com"
+  domain = "tuberlin.ru"
   # event = ""
   # script = ""
 
