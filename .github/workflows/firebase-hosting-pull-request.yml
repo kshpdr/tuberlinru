@@ -9,6 +9,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - name: Install Hugo
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y hugo
       - run: 'hugo'
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
