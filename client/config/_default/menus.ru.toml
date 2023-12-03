@@ -16,6 +16,15 @@
   weight = 10
 
 [[main]]
+  name = "Github"
+  url = "https://github.com/kshpdr/tuberlinru"
+  weight = 40
+  [main.params]
+    icon = "github"
+    showName = false
+    target = "_blank"
+
+[[main]]
   name = "телеграм"
   url = "https://t.me/+gARIV3kMEiZjM2Iy"
   weight = 40
