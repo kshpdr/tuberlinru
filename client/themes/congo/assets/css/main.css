@@ -62,6 +62,7 @@ body:has(#menu-controller:checked) {
 .toc {
   max-height: 100vh;
   overflow-y: auto;
+  padding-bottom: 50px;
 }
 
 .toc ul,
