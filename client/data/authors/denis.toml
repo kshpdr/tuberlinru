@@ -1,0 +1,7 @@
+name = "Денис Кошелев"
+image = "denis.jpeg"
+links = [
+    { github = "https://github.com/kshpdr" },
+    { telegram = "https://t.me/kshpdr" },
+    { linkedin = "https://linkedin.com/in/koshelev-denis" }
+]

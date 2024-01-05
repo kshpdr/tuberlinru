@@ -1,34 +1,37 @@
-{{ if .Params.showAuthor | default (.Site.Params.article.showAuthor | default true) }}
-  <div class="flex">
-    {{ with .Site.Author.image }}
-      {{ $authorImage := resources.Get . }}
-      {{ if $authorImage }}
-        {{ $authorImage := $authorImage.Fill "192x192 Center" }}
-        <img
-          class="!mb-0 !mt-0 me-4 h-24 w-24 rounded-full"
-          width="96"
-          height="96"
-          alt="{{ $.Site.Author.name | default "Author" }}"
-          src="{{ $authorImage.RelPermalink }}"
-          {{ if $.Site.Params.enableImageLazyLoading | default true }}
+{{ if .Params.authors }}
+  {{ range .Params.authors }}
+    {{ $authorData := index $.Site.Data.authors . }}
+    <div class="flex">
+      {{ with $authorData.image }} <!-- Author image -->
+        {{ $authorImage := resources.Get . }}
+        {{ if $authorImage }}
+          {{ $authorImage := $authorImage.Fill "192x192 Center" }}
+          <img
+            class="!mb-0 !mt-0 me-4 h-24 w-24 rounded-full"
+            width="96"
+            height="96"
+            alt="{{ $authorData.name | default "Author" }}"
+            src="{{ $authorImage.RelPermalink }}"
             loading="lazy"
-          {{ end }}
-        />
+          />
+        {{ end }}
       {{ end }}
-    {{ end }}
-    <div class="place-self-center">
-      {{ with .Site.Author.name | markdownify | emojify }}
-        <div class="text-[0.6rem] uppercase leading-3 text-neutral-500 dark:text-neutral-400">
-          {{ i18n "author.byline_title" | markdownify | emojify }}
+      <div class="place-self-center">
+        {{ with $authorData.name }} <!-- Author name -->
+          <div class="font-semibold leading-6 text-neutral-800 dark:text-neutral-300">
+            {{ . | markdownify | emojify }}
+          </div>
+        {{ end }}
+        {{ with $authorData.bio }} <!-- Author bio -->
+          <div class="text-sm text-neutral-700 dark:text-neutral-400">{{ . | markdownify | emojify }}</div>
+        {{ end }}
+        <!-- Author links -->
+        {{ with $authorData.links }}
+        <div class="text-2xl sm:text-lg">
+          {{ partial "author-links.html" (dict "context" .) }}
         </div>
-        <div class="font-semibold leading-6 text-neutral-800 dark:text-neutral-300">
-          {{ . }}
+        {{ end }}
         </div>
-      {{ end }}
-      {{ with .Site.Author.bio | markdownify | emojify }}
-        <div class="text-sm text-neutral-700 dark:text-neutral-400">{{ . }}</div>
-      {{ end }}
-      <div class="text-2xl sm:text-lg">{{ partialCached "author-links.html" . }}</div>
     </div>
-  </div>
+  {{ end }}
 {{ end }}

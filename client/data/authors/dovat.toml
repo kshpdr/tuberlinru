@@ -1,0 +1,6 @@
+name = "Доват Атаев"
+image = "dovat.jpeg"
+links = [
+    { telegram = "https://t.me/dovatello" },
+    { linkedin = "https://www.linkedin.com/in/dovat-a-9a2400200/" }
+]

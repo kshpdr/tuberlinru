@@ -1,7 +1,7 @@
-{{ with .Site.Author.links }}
+{{ with .context }} <!-- Use the passed context -->
   <div class="flex flex-wrap text-neutral-400 dark:text-neutral-500">
-    {{ range $links := . }}
-      {{ range $name, $url := $links }}
+    {{ range . }}
+      {{ range $name, $url := . }}
         <a
           class="px-1 transition-transform hover:scale-125 hover:text-primary-700 dark:hover:text-primary-400"
           style="will-change:transform;"
