@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Русскоязычное коммьюнити ТУ Берлин :sunglasses: on туберлин.ру</title>
+    <title>Русскоязычное коммьюнити ТУ Берлин :sunglasses: on Технический Университет Берлин - ТУ Берлин</title>
     <link>https://tuberlin.ru/</link>
-    <description>Recent content in Русскоязычное коммьюнити ТУ Берлин :sunglasses: on туберлин.ру</description>
+    <description>Recent content in Русскоязычное коммьюнити ТУ Берлин :sunglasses: on Технический Университет Берлин - ТУ Берлин</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
-    <lastBuildDate>Sun, 03 Dec 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 04 Jan 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://tuberlin.ru/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Гайд по Wirtschaftsingenieurwesen B.Sc., ТУ Берлин</title>
+      <link>https://tuberlin.ru/posts/industrial-engineering/</link>
+      <pubDate>Thu, 04 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://tuberlin.ru/posts/industrial-engineering/</guid>
+      <description>Вступление #Приветствую, дорогие друзья!</description>
+    </item>
     <item>
       <title>Гайд по Informatik B.Sc., ТУ Берлин</title>
       <link>https://tuberlin.ru/posts/cs/</link>
