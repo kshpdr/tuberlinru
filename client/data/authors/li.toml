@@ -1,0 +1,6 @@
+name = "Лиза"
+image = "li.png"
+links = [
+    { telegram = "https://t.me/selivan_ka" },
+    { instagram = "https://instagram.com/selivan_ka" }
+]
