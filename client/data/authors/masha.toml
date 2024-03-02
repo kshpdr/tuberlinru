@@ -1,0 +1,8 @@
+name = "Maria Stasevich"
+bio = "3.Semester Architektur B.A."
+image = "masha.jpeg"
+links = [
+    { instagram = "https://www.instagram.com/marii_architect?igsh=cmhyYmlsNWt0a282" },
+    { linkedin = "https://www.linkedin.com/in/maria-stasevich?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
+    { link = "https://mariastasevich.taplink.ws/?fbclid=PAAaYDJB3Eg0jnFvV1gdl6nzXvyTXYDrcVObTOVrMbhypsiedqgYWC64iLL6A" }
+]
